@@ -76,7 +76,7 @@ def grade_student_copy(reference_content, student_content, api_key):
     response = openai.ChatCompletion.create(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": "Vous êtes un assistant qui identifie les noms des étudiants et évalue leurs réponses."},
+            {"role": "system", "content": "You are a helpful assistant that grades student answers based on a reference answer, and what identifies student names."},
             {"role": "user", "content": prompt}
         ],
         max_tokens=150,
