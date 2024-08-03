@@ -106,7 +106,7 @@ def to_csv(df):
     return output.getvalue().decode('utf-8')
 
 # Main Streamlit application function
-st.title("Système de correction des Copies")
+st.title("CorrAI : Système de correction des Copies")
 
 # Example extracted content with multiple LaTeX formulas
 extracted_content = r'''
